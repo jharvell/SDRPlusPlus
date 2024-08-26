@@ -1,5 +1,5 @@
 #pragma once
-#include <stdint.h>
+#include <cstdint>
 
 namespace ryfi {
     /**
@@ -82,7 +82,7 @@ namespace ryfi {
     private:
         void allocate(int newSize);
 
-        uint8_t* _content = NULL;
+        uint8_t* _content = nullptr;
         int _size = 0;
     };
 }
